@@ -63,7 +63,12 @@
       <nav id="navbar" class="navbar">
         <ul>
           <!-- <li><a href="index.html" class="active">Home</a></li> -->
-          <li style="font-family: 'Poppins';" ><a href="about.html">DETALJI</a></li>
+
+
+          <!-- <li style="font-family: 'Poppins';" ><a href="about.html">DETALJI</a></li> -->
+          <li style="font-family: 'Poppins';" ><a href="#constructions">DETALJI</a></li>
+
+
           <li style="font-family: 'Poppins';"><a href="services.html">POTVRDITE DOLAZAK</a></li>
           <!--  <li><a href="projects.html">Projects</a></li> -->
            <!--  <li><a href="blog.html">Blog</a></li> -->
@@ -99,7 +104,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
 			<h2>
-			  <span data-aos="fade-down" style= "font-family: 'Italiana'; font-size: 70px; bold;">ANA </span>
+			  <span data-aos="fade-down" style= "font-family: 'Italiana'; font-size: 70px;">ANA </span>
 			  <span data-aos="fade-up" style="font-family: 'Parisienne'; font-size: 70px;">& </span> 
 			  <span data-aos="fade-down" style= "font-family: 'Italiana'; font-size: 70px;">MARIO</span>
 			  <br>
@@ -110,7 +115,7 @@
            
             <p data-aos="fade-up" style="font-family: 'Poppins'; font-size: 22px;">4. KOLOVOZA 2024.</p>
 			  <br>
-            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">POTVRDI SVOJ DOLAZAK</a>
+            <a data-aos="fade-up" data-aos-delay="200" href="#constructions" class="btn-get-started">POTVRDI SVOJ DOLAZAK</a>
           </div>
         </div>
       </div>
@@ -201,6 +206,8 @@
 
         <div class="section-header">
           <h2 style="font-family: 'Poppins'; font-size: 22px;">PLAN  I  PROGRAM</h2>
+          <span style="font-family: 'Poppins'; font-size: 22px;">JOŠ SAMO: </span>
+          <span id="demo" style="font-family: 'Poppins'; font-size: 22px;"></span>
         </div>
 
         <div class="row gy-4">
@@ -917,6 +924,46 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Aug 4, 2024 18:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      var sekunteTekst = " sekundi";
+      if(seconds == 4 || seconds == 3 || seconds == 2){
+        sekunteTekst = " sekunde";
+      }
+      if(minutes == 2){
+
+      }
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + " dana, " + hours + " sati, "
+      + minutes + " minuta, " + seconds + sekunteTekst;
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
 
 </body>
 
