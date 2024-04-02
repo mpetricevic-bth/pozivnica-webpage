@@ -112,10 +112,10 @@ var name2 = document.getElementById('name2').value;
 var email = document.getElementById('email').value;
 var sort = document.querySelector('input[name="sort"]:checked').value;
 //removeeeedddd
-console.log(sort);
+//console.log(sort);
 
 var sort2 = document.querySelector('input[name="sort2"]:checked').value;
-console.log(sort2);
+//console.log(sort2);
 var message = document.getElementById('message').value;
 
 // Dodajte podatke u Firestore kolekciju
