@@ -301,7 +301,7 @@
                   <input type="text" name="name" class="form-control" id="name" placeholder="Ime i prezime" required style="font-family: 'Poppins'; font-size: 14px;">
                 </div>
                 <div class="col-lg-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Broj telefona" required style="font-family: 'Poppins'; font-size: 14px;">
+                  <input type="text" class="form-control" name="email" id="email" placeholder="Broj telefona" required style="font-family: 'Poppins'; font-size: 14px;">
                 </div>
               </div>
 
@@ -1048,9 +1048,9 @@
     var db = firebase.firestore();
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
-    var sort = document.querySelector('input[name="sort"]:checked').id;
+    var sort = document.querySelector('input[name="sort"]:checked').value;
     //removeeeedddd
-    var sort2 = document.querySelector('input[name="sort2"]:checked').id;
+    var sort2 = document.querySelector('input[name="sort2"]:checked').value;
     var message = document.getElementById('message').value;
 
     // Dodajte podatke u Firestore kolekciju
