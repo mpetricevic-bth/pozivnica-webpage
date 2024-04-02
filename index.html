@@ -313,10 +313,10 @@
                 <div class="col-lg-6 form-group">
                   <div id="app">
                     <div class="wrap">
-                      <input type="radio" id="popular" name="sort" /><label for="popular" style="font-family: 'Poppins'; font-size: 18px;"
+                      <input type="radio" id="popular" name="sort" value="DA" /><label for="popular" style="font-family: 'Poppins'; font-size: 18px;"
                         >DA</label
                       >
-                      <input type="radio" id="recent" name="sort" /><label style="font-family: 'Poppins'; font-size: 18px;"
+                      <input type="radio" id="recent" name="sort" value="NE" checked /><label style="font-family: 'Poppins'; font-size: 18px;"
                         for="recent"
                         >NE</label
                       >
@@ -336,10 +336,10 @@
                 <div class="col-lg-6 form-group">
                   <div id="app2">
                     <div class="wrap2">
-                      <input type="radio" id="obitelj-da" name="sort2" /><label for="obitelj-da" style="font-family: 'Poppins'; font-size: 18px;"
+                      <input type="radio" id="obitelj-da" name="sort2" value="DA" /><label for="obitelj-da" style="font-family: 'Poppins'; font-size: 18px;"
                         >DA</label
                       >
-                      <input type="radio" id="obitelj-ne" name="sort2" checked /><label style="font-family: 'Poppins'; font-size: 18px;"
+                      <input type="radio" id="obitelj-ne" name="sort2" value="NE" checked /><label style="font-family: 'Poppins'; font-size: 18px;"
                         for="obitelj-ne"
                         >NE</label
                       >
@@ -1051,8 +1051,9 @@
     var sort = document.querySelector('input[name="sort"]:checked').value;
     //removeeeedddd
     console.log(sort);
-    console.log(sort2);
+    
     var sort2 = document.querySelector('input[name="sort2"]:checked').value;
+    console.log(sort2);
     var message = document.getElementById('message').value;
 
     // Dodajte podatke u Firestore kolekciju
