@@ -1047,6 +1047,8 @@
   function saveFormData() {
     var db = firebase.firestore();
     var name = document.getElementById('name').value;
+    var name1 = document.getElementById('name1').value;
+    var name2 = document.getElementById('name2').value;
     var email = document.getElementById('email').value;
     var sort = document.querySelector('input[name="sort"]:checked').value;
     //removeeeedddd
@@ -1059,9 +1061,11 @@
     // Dodajte podatke u Firestore kolekciju
     db.collection("formResponses").add({
         name: name,
+        pratnja: name1,
+        obitelj: name2,
         email: email,
-        sort: sort,
-        sort2: sort2,
+        dolazim_s_pratnjom: sort,
+        dolazim_s_obitelji: sort2,
         message: message
     })
     .then(function(docRef) {
