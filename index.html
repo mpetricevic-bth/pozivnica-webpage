@@ -309,6 +309,7 @@
                 <div class="col-lg-6 form-group">
                   <h4 style="margin-top: 5px; font-family: 'Poppins';">Dolaziš s pratnjom? </h4>
                 </div>
+               
                 <div class="col-lg-6 form-group">
                   <div id="app">
                     <div class="wrap">
@@ -321,6 +322,10 @@
                       >
                     </div>
                   </div>
+                </div>
+
+                <div class="col-lg-6 form-group" id="nameField1" style="display: none;">
+                  <input type="text" name="name1" class="form-control" id="name1" placeholder="Ime i prezime pratnje" required style="font-family: 'Poppins'; font-size: 14px;">
                 </div>
               </div>
 
@@ -341,9 +346,11 @@
                     </div>
                   </div>
                 </div>
+                <div class="form-group" id="nameField2" style="display: none;">
+                  <input type="text" name="name2" class="form-control" id="name2" placeholder="Unesi imena članova obitelji, možeš ih odvojiti zarezom" required style="font-family: 'Poppins'; font-size: 14px;">
+                </div>
+              
               </div>
-
-
               <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
@@ -964,6 +971,63 @@
       }
     }, 1000);
     </script>
+
+
+
+<script>
+  // Funkcija koja će se pozvati kada se promijeni odabir korisnika
+  function toggleNameField() {
+      var app = document.getElementById('app');
+      var nameField = document.getElementById('nameField1');
+
+      // Provjeri koji radio button je odabran
+      var selectedOption = app.querySelector('input[name="sort"]:checked').id;
+
+      // Ako je odabran radio button s ID-em "popular", prikaži polje za unos imena i prezimena
+      if (selectedOption === 'popular') {
+          nameField.style.display = 'block';
+      } else {
+          // Inače, sakrij polje za unos imena i prezimena
+          nameField.style.display = 'none';
+      }
+  }
+
+  // Dodaj event listener koji će osluškivati promjene u odabiru korisnika
+  document.querySelectorAll('input[name="sort"]').forEach(function(elem) {
+      elem.addEventListener('change', toggleNameField);
+  });
+
+  // Inicijalno pozovi funkciju kako bi se prikazalo/sakrilo polje za unos imena i prezimena ovisno o trenutnom odabiru
+  toggleNameField();
+</script>
+
+<script>
+  // Funkcija koja će se pozvati kada se promijeni odabir korisnika
+  function toggleNameField2() {
+      var app = document.getElementById('app2');
+      var nameField = document.getElementById('nameField2');
+
+      // Provjeri koji radio button je odabran
+      var selectedOption = app.querySelector('input[name="sort2"]:checked').id;
+
+      // Ako je odabran radio button s ID-em "popular", prikaži polje za unos imena i prezimena
+      if (selectedOption === 'obitelj-da') {
+          nameField.style.display = 'block';
+      } else {
+          // Inače, sakrij polje za unos imena i prezimena
+          nameField.style.display = 'none';
+      }
+  }
+
+  // Dodaj event listener koji će osluškivati promjene u odabiru korisnika
+  document.querySelectorAll('input[name="sort2"]').forEach(function(elem) {
+      elem.addEventListener('change', toggleNameField2);
+  });
+
+  // Inicijalno pozovi funkciju kako bi se prikazalo/sakrilo polje za unos imena i prezimena ovisno o trenutnom odabiru
+  toggleNameField2();
+</script>
+
 
 
 </body>
