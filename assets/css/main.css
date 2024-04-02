@@ -660,7 +660,7 @@ section {
 }
 
 .get-started .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: #888;
 }
 
 @keyframes animate-loading {
@@ -1747,7 +1747,7 @@ section {
 }
 
 .contact .php-email-form2 button[type=submit]:hover {
-  background: #807b78;
+  background: #888;
 }
 
 @keyframes animate-loading {
