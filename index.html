@@ -294,8 +294,8 @@
         <div class="row gy-4 mt-12">
           <div class="col-lg-12">
 
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form" novalidate>
+            <!--<form action="forms/contact.php" method="post" role="form" class="php-email-form" novalidate> -->
+            <form action="#" onsubmit="saveFormData(); return false;" class="php-email-form">
               <div class="row gy-4">
                 <div class="col-lg-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Ime i prezime" required style="font-family: 'Poppins'; font-size: 14px;">
@@ -1026,6 +1026,53 @@
 </script>
 
 
+
+
+<script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore.js"></script>
+
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCfTRBwTE6Ro1e8bAZ--LzU5vz6iayMu64",
+    authDomain: "vjencanje-d2587.firebaseapp.com",
+    projectId: "vjencanje-d2587",
+    storageBucket: "vjencanje-d2587.appspot.com",
+    messagingSenderId: "622573155011",
+    appId: "1:622573155011:web:db71839a6db336f560a876",
+    measurementId: "G-CQES036Z8J"
+  };
+  // Inicijalizirajte Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  // Spremanje podataka iz forme u Firestore
+  function saveFormData() {
+    var db = firebase.firestore();
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var sort = document.querySelector('input[name="sort"]:checked').id;
+    var sort2 = document.querySelector('input[name="sort2"]:checked').id;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+
+    // Dodajte podatke u Firestore kolekciju
+    db.collection("formResponses").add({
+        name: name,
+        email: email,
+        sort: sort,
+        sort2: sort2,
+        subject: subject,
+        message: message
+    })
+    .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+        // Ovdje možete dodati kod za prikaz poruke korisniku ili preusmjeravanje na drugu stranicu
+    })
+    .catch(function(error) {
+        console.error("Error adding document: ", error);
+    });
+  }
+</script>
 
 </body>
 
