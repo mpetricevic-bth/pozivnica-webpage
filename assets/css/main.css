@@ -2717,7 +2717,8 @@ section {
   
   border-radius: 0px;
   transition: 0.5s;
-  margin: 5px;
+  /*margin: 5px;*/
+
   color: #464646;
   border: 1px solid #464646;
 }
@@ -2736,7 +2737,7 @@ section {
   
   border-radius: 0px;
   transition: 0.5s;
-  margin: 5px;
+ /* margin: 5px;*/
   color: #464646;
   border: 1px solid #464646;
 }
