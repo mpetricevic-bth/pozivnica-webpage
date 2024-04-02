@@ -1072,6 +1072,7 @@ section {
   background-color: var(--color-primary);
 }
 
+
 @media (max-width: 767px) {
   .testimonials .testimonial-wrap {
     padding-left: 0;
@@ -1091,6 +1092,11 @@ section {
     position: static;
     left: auto;
   }
+
+  .img-bg {
+    background-image: url('Mobile.png');
+ 
+}
 }
 
 /*--------------------------------------------------------------
@@ -1101,6 +1107,16 @@ section {
   background-position: center center;
   min-height: 400px;
 }
+
+/*
+@media (min-width: 768px) {
+ 
+  .img-bg {
+      background-image: url('assets/img/Web.png');
+     
+  }
+} */
+
 
 .alt-services h3 {
   font-size: 28px;
@@ -1908,6 +1924,14 @@ section {
   .hero .info h2 {
     font-size: 36px;
   }
+
+}
+
+@media (min-width: 768px) {
+  .img-bg {
+    background-image: url('Web.png');
+    height: 400px;
+}
 }
 
 .hero .info p {
