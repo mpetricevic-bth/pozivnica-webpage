@@ -1060,13 +1060,13 @@
 
     // Dodajte podatke u Firestore kolekciju
     db.collection("formResponses").add({
-        name: name,
+        ime: name,
         pratnja: name1,
         obitelj: name2,
-        email: email,
+        telefon: email,
         dolazim_s_pratnjom: sort,
         dolazim_s_obitelji: sort2,
-        message: message
+        poruka_za_mladence: message
     })
     .then(function(docRef) {
         console.log("Document written with ID: ", docRef.id);
