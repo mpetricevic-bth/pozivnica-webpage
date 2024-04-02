@@ -1095,7 +1095,6 @@ section {
 
   .img-bg {
     background-image: url('Mobile.png');
-    height: 200px;
  
 }
 }
@@ -1928,7 +1927,7 @@ section {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .img-bg {
     background-image: url('Web.png');
     height: 400px;
