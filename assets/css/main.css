@@ -1095,6 +1095,7 @@ section {
 
   .img-bg {
     background-image: url('Mobile.png');
+    height: 200px;
  
 }
 }
