@@ -2845,22 +2845,20 @@ input[type="radio"]:checked + label {
 }
 
 .custom-table, .custom-table th, .custom-table td {
-  border: none;
+  border: 1px solid black;
 }
 
 .custom-table th, .custom-table td {
-  padding: 20px;
+  padding: 10px;
   text-align: left;
 }
 
 .custom-table .icon-column {
   width: 50px;
-  height: 30px;
 }
 
 .custom-table .text-column {
   width: 80px;
-  height: 30px;
 }
 
 @media (max-width: 767px) {
