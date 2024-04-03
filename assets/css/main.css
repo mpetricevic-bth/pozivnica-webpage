@@ -2860,14 +2860,3 @@ input[type="radio"]:checked + label {
 .custom-table .text-column {
   width: 80px;
 }
-
-@media (max-width: 767px) {
-  /* Stilovi za uređaje s max širinom zaslona od 767px (mobilni uređaji) */
-  .custom-table .icon-column {
-      width: 30px;
-  }
-
-  .custom-table .text-column {
-      width: calc(100% - 30px);
-  }
-}
