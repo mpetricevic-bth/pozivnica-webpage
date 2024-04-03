@@ -2854,7 +2854,7 @@ input[type="radio"]:checked + label {
 }
 
 .custom-table .icon-column {
-  width: 50px;
+  width: 30px;
 }
 
 .custom-table .text-column {
