@@ -2869,7 +2869,10 @@ input[type="radio"]:checked + label {
 
 
 
-
+.checkbox-wrapper-39 {
+  display: flex;
+  align-items: center; /* Postavljanje vertikalnog centriranja sadržaja */
+}
 
 
 .checkbox-wrapper-39 *,
@@ -2880,8 +2883,8 @@ input[type="radio"]:checked + label {
 
 .checkbox-wrapper-39 label {
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -2898,6 +2901,9 @@ input[type="radio"]:checked + label {
  border-top-color: transparent;
  border-left-color: transparent;
  border-radius: 0;
+}
+.checkbox-wrapper-39 .checkbox-text {
+  font-size: 16px; /* Prilagodba veličine teksta po potrebi */
 }
 
 .checkbox-wrapper-39 .checkbox {
