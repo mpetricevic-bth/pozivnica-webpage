@@ -1948,7 +1948,7 @@ section {
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 40px;
+  padding: 12px 20px;
   border-radius: 0px;
   transition: 0.5s;
   margin: 10px;
@@ -2854,9 +2854,9 @@ input[type="radio"]:checked + label {
 }
 
 .custom-table .icon-column {
-  width: 30px;
+  width: 20px;
 }
 
 .custom-table .text-column {
-  width: 80px;
+  width: 110px;
 }
