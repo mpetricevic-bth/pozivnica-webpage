@@ -1155,6 +1155,7 @@ section {
   line-height: 0;
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
   background-color: #fff;
+  background-image: url('Web.png');
   transition: 0.3s;
 }
 
