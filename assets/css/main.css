@@ -2845,11 +2845,11 @@ input[type="radio"]:checked + label {
 }
 
 .custom-table, .custom-table th, .custom-table td {
-  border: 1px solid black;
+  border: none;
 }
 
 .custom-table th, .custom-table td {
-  padding: 10px;
+  padding: 20px;
   text-align: left;
 }
 
