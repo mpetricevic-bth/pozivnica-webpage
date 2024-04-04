@@ -1647,14 +1647,14 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact Section
+# Potvrda Section
 --------------------------------------------------------------*/
-.contact .info-item {
+.potvrda .info-item {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
   padding: 20px 0 30px 0;
 }
 
-.contact .info-item i {
+.potvrda .info-item i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1667,21 +1667,21 @@ section {
   border: 2px dotted #ffd565;
 }
 
-.contact .info-item h3 {
+.potvrda .info-item h3 {
   font-size: 20px;
   color: #6c757d;
   font-weight: 700;
   margin: 10px 0;
 }
 
-.contact .info-item p {
+.potvrda .info-item p {
   padding: 0;
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.contact .php-email-form2 {
+.potvrda .php-email-form2 {
   width: 100%;
   background: #fff;
   /*box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);*/
@@ -1689,11 +1689,11 @@ section {
 
 }
 
-.contact .php-email-form2 .form-group {
+.potvrda .php-email-form2 .form-group {
   padding-bottom: 20px;
 }
 
-.contact .php-email-form2 .error-message {
+.potvrda .php-email-form2 .error-message {
   display: none;
   color: #fff;
   background: #df1529;
@@ -1702,11 +1702,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form2 .error-message br+br {
+.potvrda .php-email-form2 .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form2 .sent-message {
+.potvrda .php-email-form2 .sent-message {
   display: none;
   color: #fff;
   background: #059652;
@@ -1715,14 +1715,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form2 .loading {
+.potvrda .php-email-form2 .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form2 .loading:before {
+.potvrda .php-email-form2 .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1734,27 +1734,27 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form2 input,
-.contact .php-email-form2 textarea {
+.potvrda .php-email-form2 input,
+.potvrda .php-email-form2 textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form2 input:focus,
-.contact .php-email-form2 textarea:focus {
+.potvrda .php-email-form2 input:focus,
+.potvrda .php-email-form2 textarea:focus {
   border-color: var(--color-primary);
 }
 
-.contact .php-email-form2 input {
+.potvrda .php-email-form2 input {
   height: 44px;
 }
 
-.contact .php-email-form2 textarea {
+.potvrda .php-email-form2 textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form2 button[type=submit] {
+.potvrda .php-email-form2 button[type=submit] {
   background: #7F6455;
   border: 0.1rem #000;
   padding: 10px 35px;
@@ -1763,7 +1763,7 @@ section {
   border-radius: 0rem;
 }
 
-.contact .php-email-form2 button[type=submit]:hover {
+.potvrda .php-email-form2 button[type=submit]:hover {
   background: #888;
 }
 
@@ -1776,6 +1776,137 @@ section {
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Lokacija Section
+--------------------------------------------------------------*/
+.lokacija .info-item {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  padding: 20px 0 30px 0;
+}
+
+.lokacija .info-item i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  line-height: 0;
+  color: var(--color-primary);
+  border-radius: 50%;
+  border: 2px dotted #ffd565;
+}
+
+.lokacija .info-item h3 {
+  font-size: 20px;
+  color: #6c757d;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.lokacija .info-item p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.lokacija .php-email-form2 {
+  width: 100%;
+  background: #fff;
+  /*box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);*/
+  padding: 30px;
+
+}
+
+.lokacija .php-email-form2 .form-group {
+  padding-bottom: 20px;
+}
+
+.lokacija .php-email-form2 .error-message {
+  display: none;
+  color: #fff;
+  background: #df1529;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.lokacija .php-email-form2 .error-message br+br {
+  margin-top: 25px;
+}
+
+.lokacija .php-email-form2 .sent-message {
+  display: none;
+  color: #fff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.lokacija .php-email-form2 .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.lokacija .php-email-form2 .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #059652;
+  border-top-color: #fff;
+  animation: animate-loading 1s linear infinite;
+}
+
+.lokacija .php-email-form2 input,
+.lokacija .php-email-form2 textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.lokacija .php-email-form2 input:focus,
+.lokacija .php-email-form2 textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.lokacija .php-email-form2 input {
+  height: 44px;
+}
+
+.lokacija .php-email-form2 textarea {
+  padding: 10px 12px;
+}
+
+.lokacija .php-email-form2 button[type=submit] {
+  background: #7F6455;
+  border: 0.1rem #000;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 0rem;
+}
+
+.lokacija .php-email-form2 button[type=submit]:hover {
+  background: #888;
+}
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
