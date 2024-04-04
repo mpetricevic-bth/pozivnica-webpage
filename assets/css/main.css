@@ -61,7 +61,7 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 50px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -71,7 +71,6 @@ section {
 
 .section-header {
   text-align: center;
-  padding-bottom: 70px;
 }
 
 .section-header h2 {
