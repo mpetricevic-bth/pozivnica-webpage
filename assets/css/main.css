@@ -3090,7 +3090,7 @@ ul {
  
 
 .countdown {
-  width: 80%; /* Sveukupna širina diva se prilagođava veličini ekrana */
+  width: 60%; /* Sveukupna širina diva se prilagođava veličini ekrana */
   padding: 10px; /* Dodajte prostor između rubova i unutarnjih elemenata */
   box-sizing: border-box; /* Osigurava da padding ne utječe na ukupnu širinu */
 }
