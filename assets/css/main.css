@@ -3033,7 +3033,6 @@ ul {
   text-align:center;
   color: #FFF;
   text-align: center;
-  leading-trim: both;
   font-family: Poppins;
   font-size: 12px;
   font-style: normal;
@@ -3046,7 +3045,6 @@ ul {
   display:block;
   font-size:6rem;
   color:#FFF;
-  leading-trim: both;
   font-family: Italiana;
   font-size: 100px;
   font-style: normal;
@@ -3059,7 +3057,6 @@ ul {
   font-size:6rem;
   line-height: 1;
   color: #FFF;
-  leading-trim: both;
   font-family: Italiana;
   font-size: 100px;
   font-style: normal;
