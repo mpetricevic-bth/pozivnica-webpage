@@ -3104,7 +3104,6 @@ input[type="radio"]:checked + label {
 }
 
 .countdown li.separator {
-    flex: 0 0 auto; /* Ne dopustite da se separator elementi rastežu */
     font-size: 2rem; /* Prilagodba veličine fonta za manje uređaje */
 }
 
