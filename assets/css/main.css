@@ -3016,7 +3016,71 @@ input[type="radio"]:checked + label {
   transition: transform 200ms ease-out 200ms;
 }
 
+.container2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 19px;
+  background: rgba(53, 44, 44, 0.80);
+  margin: 0 auto;
+  align-items:center;
+  justify-content:center;
+  padding: 30px;
+}
 
+.countdown ul {
+  display: flex;
+  margin:0 auto;
+  justify-content: center;
+  }
+.countdown {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.countdown ul li {
+  /* Stilovi koji se primjenjuju samo na ul li elemente unutar .countdown */
+  list-style-type: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFF;
+  text-align: center;
+  leading-trim: both;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.6px;
+}
 
+.countdown li span {
+  /* Dodatni stilovi za span elemente unutar ul li */
+  display: block;
+  font-size: 6rem;
+  color: #FFF;
+  leading-trim: both;
+  font-family: Italiana;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
+.countdown li.separator {
+  /* Dodatni stilovi za separator elemente unutar ul li */
+  margin: 0 15px;
+  font-size: 6rem;
+  line-height: 1;
+  color: #FFF;
+  leading-trim: both;
+  font-family: Italiana;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
