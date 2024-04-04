@@ -3089,11 +3089,6 @@ input[type="radio"]:checked + label {
 
 @media (max-width: 767px) {
 
-  .countdown {
-    width: 100%; /* Sveukupna širina diva se prilagođava veličini ekrana */
-    padding: 10px; /* Dodajte prostor između rubova i unutarnjih elemenata */
-    box-sizing: border-box; /* Osigurava da padding ne utječe na ukupnu širinu */
-}
 
 .countdown ul {
     display: flex;
