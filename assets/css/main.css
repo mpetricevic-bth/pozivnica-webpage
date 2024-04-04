@@ -3086,3 +3086,25 @@ ul {
     align-items: center;
     text-align: center;
 }
+
+
+
+@media (max-width: 767px) {
+  .countdown ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .countdown ul li {
+      flex: 0 0 100%;
+  }
+
+  .countdown li.separator {
+      margin: 0;
+  }
+
+  .countdown li span {
+      font-size: 4rem;
+  }
+}
