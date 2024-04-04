@@ -189,7 +189,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: #ffc732;
+  background: #7F6455;
   color: #fff;
 }
 
@@ -2589,7 +2589,6 @@ section {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
@@ -2683,10 +2682,6 @@ section {
   color: #fff;
 }
 
-.footer .footer-legal .copyright {
-  padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
 
 .footer .footer-legal .credits {
   padding-top: 4px;
