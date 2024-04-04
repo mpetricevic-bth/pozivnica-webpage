@@ -3089,8 +3089,31 @@ input[type="radio"]:checked + label {
 
 @media (max-width: 767px) {
 
+  .countdown {
+    width: 100%; /* Sveukupna širina diva se prilagođava veličini ekrana */
+    padding: 10px; /* Dodajte prostor između rubova i unutarnjih elemenata */
+    box-sizing: border-box; /* Osigurava da padding ne utječe na ukupnu širinu */
+}
 
-  .countdown li span {
+.countdown ul {
+    display: flex;
+    justify-content: space-around; /* Centriranje elemenata unutar ul liste */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.countdown ul li {
+    flex: 1; /* Omogućava da se svi elementi ravnomjerno rasporede unutar flex kontejnera */
+    text-align: center; /* Centriranje teksta unutar svakog elementa */
+}
+
+.countdown li.separator {
+    flex: 0 0 auto; /* Ne dopustite da se separator elementi rastežu */
+    font-size: 2rem; /* Prilagodba veličine fonta za manje uređaje */
+}
+
+.countdown li span {
     font-size: 3rem; /* Prilagodba veličine fonta za manje uređaje */
 }
 
