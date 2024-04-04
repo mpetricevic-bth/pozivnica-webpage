@@ -591,7 +591,7 @@ section {
 .get-started .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #df1529;
+  background: #900C3F;
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
@@ -601,7 +601,7 @@ section {
 .get-started .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #059652;
+  background: #097969;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -1696,7 +1696,7 @@ section {
 .potvrda .php-email-form2 .error-message {
   display: none;
   color: #fff;
-  background: #df1529;
+  background: #900C3F;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1709,7 +1709,7 @@ section {
 .potvrda .php-email-form2 .sent-message {
   display: none;
   color: #fff;
-  background: #059652;
+  background: #097969;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1832,7 +1832,7 @@ section {
 .lokacija .php-email-form2 .error-message {
   display: none;
   color: #fff;
-  background: #df1529;
+  background: #900C3F;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1845,7 +1845,7 @@ section {
 .lokacija .php-email-form2 .sent-message {
   display: none;
   color: #fff;
-  background: #059652;
+  background: #097969;
   text-align: center;
   padding: 15px;
   font-weight: 600;

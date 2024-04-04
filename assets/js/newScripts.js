@@ -137,6 +137,23 @@ var name1 = document.getElementById('name1').value;
 var name2 = document.getElementById('name2').value;
 var email = document.getElementById('email').value;
 var sort = document.querySelector('input[name="sort"]:checked').value;
+var checkbox = document.getElementById('terms-checkbox-37').value;
+var checkedValue = document.querySelector('.checkbox2').value;
+
+var smjestajChecked = "Nije potreban";
+if (document.getElementById('terms-checkbox-37').checked) {
+    smjestajChecked = "Potreban";
+} else {
+    smjestajChecked = "Nije potreban";
+}
+
+
+var today = new Date();
+var date = today.getDate() +'.'+(today.getMonth()+1)+'.'+ today.getFullYear()+'.';
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var dateTime = date+'   '+time;
+
+
 //removeeeedddd
 //console.log(sort);
 
@@ -152,13 +169,18 @@ db.collection("formResponses").add({
     telefon: email,
     dolazim_s_pratnjom: sort,
     dolazim_s_obitelji: sort2,
-    poruka_za_mladence: message
+    poruka_za_mladence: message,
+    smjestaj: smjestajChecked,
+    datum_prijave: dateTime
 })
 .then(function(docRef) {
     console.log("Document written with ID: ", docRef.id);
-    // Ovdje možete dodati kod za prikaz poruke korisniku ili preusmjeravanje na drugu stranicu
+    // Prikazati sent-message div ako je podatak uspješno poslan
+    document.querySelector('.sent-message').style.display = 'block';
 })
 .catch(function(error) {
     console.error("Error adding document: ", error);
+    // Prikazati error-message div ako dođe do greške pri slanju podataka
+    document.querySelector('.error-message').style.display = 'block';
 });
 }
