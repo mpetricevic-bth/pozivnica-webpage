@@ -3084,3 +3084,14 @@ input[type="radio"]:checked + label {
   font-weight: 200;
   line-height: normal;
 }
+
+
+
+@media (max-width: 767px) {
+
+
+  .countdown li span {
+    font-size: 3rem; /* Prilagodba veličine fonta za manje uređaje */
+}
+
+}
