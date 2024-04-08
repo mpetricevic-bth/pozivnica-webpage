@@ -122,6 +122,8 @@ apiKey: "AIzaSyCfTRBwTE6Ro1e8bAZ--LzU5vz6iayMu64",
 authDomain: "vjencanje-d2587.firebaseapp.com",
 projectId: "vjencanje-d2587",
 storageBucket: "vjencanje-d2587.appspot.com",
+databaseURL: "https://vjencanje-d2587-default-rtdb.europe-west1.firebasedatabase.app/",
+//storageBucket: "vjencanje-d2587-default-rtdb.europe-west1.firebasedatabase.app",
 messagingSenderId: "622573155011",
 appId: "1:622573155011:web:db71839a6db336f560a876",
 measurementId: "G-CQES036Z8J"
@@ -131,6 +133,9 @@ firebase.initializeApp(firebaseConfig);
 
 // Spremanje podataka iz forme u Firestore
 function saveFormData() {
+
+    //AKO ŽELIM KORISTIT REALTIME DDB
+    // var db = firebase.database();
 var db = firebase.firestore();
 var name = document.getElementById('name').value;
 var name1 = document.getElementById('name1').value;
@@ -162,6 +167,9 @@ var sort2 = document.querySelector('input[name="sort2"]:checked').value;
 var message = document.getElementById('message').value;
 
 // Dodajte podatke u Firestore kolekciju
+//AKO ZELIM KORISTIT REALTIME DATABASE
+//db.ref("formResponses").push({
+
 db.collection("formResponses").add({
     ime: name,
     pratnja: name1,
