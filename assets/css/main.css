@@ -1655,6 +1655,10 @@ section {
   padding: 20px 0 30px 0;
 }
 
+.potvrda .row{
+  margin-top: 3px;
+}
+
 .potvrda .info-item i {
   display: flex;
   align-items: center;
@@ -1779,6 +1783,13 @@ section {
 }
 
 
+#nameField1.form-group{
+  margin-top: 3px;
+}
+
+#nameField2.form-group{
+  margin-top: 3px;
+}
 
 
 
