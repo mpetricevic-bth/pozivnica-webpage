@@ -116,18 +116,18 @@ toggleNameField2();
 
 
 
-
 var firebaseConfig = {
 apiKey: "AIzaSyCfTRBwTE6Ro1e8bAZ--LzU5vz6iayMu64",
 authDomain: "vjencanje-d2587.firebaseapp.com",
 projectId: "vjencanje-d2587",
 storageBucket: "vjencanje-d2587.appspot.com",
 databaseURL: "https://vjencanje-d2587-default-rtdb.europe-west1.firebasedatabase.app/",
-//storageBucket: "vjencanje-d2587-default-rtdb.europe-west1.firebasedatabase.app",
 messagingSenderId: "622573155011",
 appId: "1:622573155011:web:db71839a6db336f560a876",
 measurementId: "G-CQES036Z8J"
 };
+
+
 // Inicijalizirajte Firebase
 firebase.initializeApp(firebaseConfig);
 
@@ -182,9 +182,12 @@ db.collection("formResponses").add({
     datum_prijave: dateTime
 })
 .then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
+    console.log("Saved!");
+    //console.log("Document written with ID: ", docRef.id);
     // Prikazati sent-message div ako je podatak uspješno poslan
     document.querySelector('.sent-message').style.display = 'block';
+
+    document.getElementById("saveButton").disabled = true;
 })
 .catch(function(error) {
     console.error("Error adding document: ", error);

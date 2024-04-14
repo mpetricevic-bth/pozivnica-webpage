@@ -1656,7 +1656,7 @@ section {
 }
 
 .potvrda .row{
-  /*margin-top: 1px;*/
+  margin-top: 0.1rem;
 }
 
 .potvrda .info-item i {
@@ -1695,7 +1695,6 @@ section {
 }
 
 .potvrda .php-email-form2 .form-group {
-  padding-bottom: 10px;
 }
 
 .potvrda .php-email-form2 .error-message {
