@@ -1656,7 +1656,7 @@ section {
 }
 
 .potvrda .row{
-  margin-top: 10px;
+  margin-top: 1px;
 }
 
 .potvrda .info-item i {
@@ -2735,7 +2735,7 @@ section {
 .footer {
   color: #fff;
   font-size: 14px;
-  padding: 120px 0 60px 0;
+  padding: 120px 0 90px 0;
   position: relative;
   background-image: url(foto-vjencani4.png);
   background-size: cover; /* Dodajte ovu liniju */
