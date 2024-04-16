@@ -81,14 +81,15 @@ var x = setInterval(function() {
 
 function authenticate() {
     var password = document.getElementById("lozinka").value;
-
     // Ovdje provjerite ispravnost lozinke
     if (password === "test") {
+        //document.querySelector("mainBody").classList.remove("overflowHidden");
         // Sakrij login formu nakon 1 sekunde od uspješnog logiranja
         setTimeout(function() {
             document.getElementById("loginPage").classList.add("hidden");
             // Omogući interakciju s navigacijom nakon što se login forma sakrije
             document.getElementById("header").style.pointerEvents = "auto";
+            document.getElementById("mainBody").style.overflow = "auto";
             // Prikaži sadržaj stranice nakon što se login forma sakrije
             setTimeout(function() {
                 document.getElementById("testDiv").style.opacity = 1;
@@ -98,6 +99,16 @@ function authenticate() {
         alert("Wrong password. Please try again.");
     }
 }
+
+function showLoginPage() {
+    document.getElementById("loginPage").classList.remove("hidden");
+    document.body.classList.add("login-open");
+  }
+  
+  function hideLoginPage() {
+    document.getElementById("loginPage").classList.add("hidden");
+    document.body.classList.remove("login-open");
+  }
 
 
 
