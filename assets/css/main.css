@@ -1936,6 +1936,12 @@ input[type="radio"]:checked + label {
   display: none;
 }
 
+@media (max-width: 768px) {
+  .login-container {
+    padding: 0 15px; /* Dodajte potrebni razmak na mobilnim uređajima */
+  }
+}
+
 .login-container {
   pointer-events: auto; /* Dodajemo ovo kako bi se omogućila interakcija s login formom */
   /*background-color: #059652; */
@@ -1946,11 +1952,11 @@ input[type="radio"]:checked + label {
   text-align: center;
   min-height: 100vh;
   */
-
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh; /* Postavljanje visine na 100% visine preglednika */
 
 
 /*
