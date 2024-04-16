@@ -93,8 +93,8 @@ function authenticate() {
             // Prikaži sadržaj stranice nakon što se login forma sakrije
             setTimeout(function() {
                 document.getElementById("testDiv").style.opacity = 1;
-            }, 1000);
-        }, 1000);
+            }, 300);
+        }, 300);
     } else {
         alert("Pogrešna lozinka. Probaj opet ili kontaktiraj Maria.");
     }
