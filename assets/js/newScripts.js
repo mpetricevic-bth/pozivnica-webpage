@@ -60,6 +60,47 @@ var x = setInterval(function() {
     }
 }, 1000);
 
+// function authenticate() {
+//     var password = document.getElementById("passwordInput").value;
+
+//     // Ovdje provjerite ispravnost lozinke
+//     if (password === "test") {
+//         // Sakrij login formu nakon 1 sekunde od uspješnog logiranja
+//         setTimeout(function() {
+//             document.getElementById("loginPage").classList.add("hidden");
+//             // Prikaži sadržaj stranice nakon 0.5 sekundi od sakrivanja login forme
+//             setTimeout(function() {
+//                 document.getElementById("testDiv").style.opacity = "1";
+//             }, 500);
+//         }, 1000);
+//     } else {
+//         alert("Wrong password. Please try again.");
+//     }
+// }
+
+
+function authenticate() {
+    var password = document.getElementById("lozinka").value;
+
+    // Ovdje provjerite ispravnost lozinke
+    if (password === "test") {
+        // Sakrij login formu nakon 1 sekunde od uspješnog logiranja
+        setTimeout(function() {
+            document.getElementById("loginPage").classList.add("hidden");
+            // Omogući interakciju s navigacijom nakon što se login forma sakrije
+            document.getElementById("header").style.pointerEvents = "auto";
+            // Prikaži sadržaj stranice nakon što se login forma sakrije
+            setTimeout(function() {
+                document.getElementById("testDiv").style.opacity = 1;
+            }, 1000);
+        }, 1000);
+    } else {
+        alert("Wrong password. Please try again.");
+    }
+}
+
+
+
 
 
 
