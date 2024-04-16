@@ -562,6 +562,10 @@ section {
   .get-started .php-email-form {
     padding: 10px;
   }
+
+  .login .php-email-form2 {
+    padding: 10px;
+  }
 }
 
 .get-started .php-email-form h3 {
@@ -1947,7 +1951,6 @@ input[type="radio"]:checked + label {
   align-items: center;
   justify-content: center;
   height: 100%;
-  background: green;
 
 
 /*
