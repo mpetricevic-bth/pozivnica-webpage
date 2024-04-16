@@ -82,7 +82,7 @@ var x = setInterval(function() {
 function authenticate() {
     var password = document.getElementById("lozinka").value;
     // Ovdje provjerite ispravnost lozinke
-    if (password === "test") {
+    if (password === "anaimario") {
         //document.querySelector("mainBody").classList.remove("overflowHidden");
         // Sakrij login formu nakon 1 sekunde od uspješnog logiranja
         setTimeout(function() {
@@ -96,7 +96,7 @@ function authenticate() {
             }, 1000);
         }, 1000);
     } else {
-        alert("Wrong password. Please try again.");
+        alert("Pogrešna lozinka. Probaj opet ili kontaktiraj Maria.");
     }
 }
 
