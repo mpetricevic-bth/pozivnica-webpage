@@ -94,7 +94,7 @@ function authenticate() {
             setTimeout(function() {
                 document.getElementById("testDiv").style.opacity = 1;
             }, 300);
-        }, 300);
+        }, 30);
     } else {
         alert("Pogrešna lozinka. Probaj opet ili kontaktiraj Maria.");
     }
