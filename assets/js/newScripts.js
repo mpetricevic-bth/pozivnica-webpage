@@ -90,6 +90,7 @@ function authenticate() {
             // Omogući interakciju s navigacijom nakon što se login forma sakrije
             document.getElementById("header").style.pointerEvents = "auto";
             document.getElementById("mainBody").style.overflow = "auto";
+            document.getElementById("hero").style.pointerEvents = "auto";
             // Prikaži sadržaj stranice nakon što se login forma sakrije
             setTimeout(function() {
                 document.getElementById("testDiv").style.opacity = 1;
