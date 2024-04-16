@@ -956,7 +956,7 @@ section {
 }
 
 .login .row{
-  margin-top: 0.1rem;
+  
 }
 
 .login .info-item i {
@@ -1943,7 +1943,12 @@ input[type="radio"]:checked + label {
   min-height: 100vh;
   */
 
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: green;
+
 
 /*
   top: 50%;
