@@ -189,7 +189,8 @@ function saveFormData() {
 
     //AKO ŽELIM KORISTIT REALTIME DDB
     // var db = firebase.database();
-var db = firebase.firestore();
+    // firebase.firestore();
+var db = firebase.database();
 var name = document.getElementById('name').value;
 var name1 = document.getElementById('name1').value;
 var name2 = document.getElementById('name2').value;
@@ -223,7 +224,9 @@ var message = document.getElementById('message').value;
 //AKO ZELIM KORISTIT REALTIME DATABASE
 //db.ref("formResponses").push({
 
-db.collection("formResponses").add({
+//obicna baza
+//db.collection("formResponses").add({
+    db.ref("formResponses").push({
     ime: name,
     pratnja: name1,
     obitelj: name2,
