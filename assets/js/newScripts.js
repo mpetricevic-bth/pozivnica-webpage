@@ -252,9 +252,21 @@ var message = document.getElementById('message').value;
 });
 }
 
+
+var db2 = firebase.firestore();
 var counterContainer = document.querySelector(".website-counter");
 var visitCount = localStorage.getItem("page_view");
 
+
+firebase.database().ref("visitors").push({
+    count: visitCount
+});
+
+const ref = firebase.database().ref("visitors");
+const query = ref.orderByChild("count").limitToLast(1);
+query.once("child_added").then((snapshot) => {
+  console.log(snapshot.val().value);
+});
 // Check if page_view entry is present
 if (visitCount) {
   visitCount = Number(visitCount) + 1;
@@ -263,4 +275,11 @@ if (visitCount) {
   visitCount = 1;
   localStorage.setItem("page_view", 1);
 }
+
+//obicna baza
+db2.collection("visitors").add({
+        count: visitCount
+    });
+
+
 counterContainer.innerHTML = visitCount;
